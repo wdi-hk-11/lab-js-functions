@@ -27,22 +27,22 @@ Please write code that implements various functions, following the requirements 
   - the keys are the characters that occur in the string
   - the values are the number of occurences for each letter, regardless of the case
 
-For example, calling the function with the string "General Assembly" will return:
+  For example, calling the function with the string "General Assembly" will return:
 
-```javascript
-{
-  a: 2,
-  b: 1,
-  e: 3,
-  g: 1,
-  l: 2,
-  m: 1,
-  n: 1,
-  r: 1,
-  s: 2,
-  y: 1
-}
-```
+  ```javascript
+  {
+    a: 2,
+    b: 1,
+    e: 3,
+    g: 1,
+    l: 2,
+    m: 1,
+    n: 1,
+    r: 1,
+    s: 2,
+    y: 1
+  }
+  ```
 
 3. Write a function that return the number of arguments passed to the function when called.
 
