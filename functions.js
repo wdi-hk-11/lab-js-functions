@@ -26,25 +26,17 @@ function multiplyArray() {
 
 
 // Question 5
-var numberOfArguments = function(){
-  
-}
-
-
-
-// Question 6
 var reverseString = function (){
   
 };
 
 
-// Question 7
+// Question 8
 function findLongestWord () {
   
 }
 
-
-// Question 8
+// Question 9
 function filterLongWords () {
   
 }
@@ -59,3 +51,7 @@ function charactersOccurencesCount() {
   
 }
 
+// Bonus 3
+var numberOfArguments = function(){
+  
+}
