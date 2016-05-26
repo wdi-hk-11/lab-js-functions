@@ -54,7 +54,7 @@ function isCharacterAVowel(character) {
 // Question 4
 function sumArray(array) {
   var i, total = 0;
-  for(i in array) {
+  for(i = 0; i < array.length; i++) {
     total += array[i];
   }
   return total;
@@ -64,7 +64,7 @@ function sumArray(array) {
 // Question 4
 function multiplyArray(array) {
   var i, total = 1;
-  for(i in array) {
+  for(i = 0; i < array.length; i++) {
     total *= array[i];
   }
   return total;
@@ -73,7 +73,7 @@ function multiplyArray(array) {
 
 // Question 5
 function reverseString (str){
-  total = "";
+  var total = "";
   for (var i=str.length-1;i>=0;i--) {
     total += str[i];
   }
@@ -84,7 +84,7 @@ function reverseString (str){
 // Question 6
 function findLongestWord (words) {
   var longestword = 0;
-  for(var i in words) {
+  for(var i=0; i < words.length; i++) {
     if (longestword < words[i].length) {
     longestword= words[i].length;
     }
@@ -95,7 +95,7 @@ function findLongestWord (words) {
 // Question 7
 function filterLongWords (words,i) {
   var filteredArrays = [];
-  for(var x in words) {
+  for(var x=0; x < words.length; x++) {
     if (i < words[x].length) {
       filteredArrays.push(words[x]);
     }
@@ -125,7 +125,7 @@ String.prototype.reverseString = function() {
 String.prototype.charactersOccurencesCount = function() {
   var arr = this.toLowerCase('').split('').sort('');
   var obj = {};
-  for (var i in arr) {
+  for (var i=1 ; i< arr.length; i++) {
     obj[arr[i]] = (obj[arr[i]] || 0) + 1;
     //The function above is equivalent for obj[arr[i]] = obj[arr[i]] ? obj[arr[i]]+1 : 1;
   }
@@ -145,4 +145,5 @@ SELF NOTE
 - Empty callback and use arguments as parameter when building the function's logic. The function will be multiplyArray(1,2,3,4); instead of multiplyArray([1,2,3,4]);
 - Object Oriented Programming (OOP). Include this, constructors, prototypes where an object encapsulates state, behavior.
 - obj[arr[i]] = (obj[arr[i]] || 0) + 1; is example for Short Circuit Evaluation. E.g. 'hey' || 0 returns 'hey'. Use when multiple case are expected to be true ( || )or false ( && ).
+- "For in" is bad practice for arrays iteration.
 */
