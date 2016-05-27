@@ -42,7 +42,6 @@ function multiplyArray(array) {
 		count *= (array[i])
 	}
 	return count
-	
 }
 multiplyArray([1,2,3,4]);
 
